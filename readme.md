@@ -50,7 +50,7 @@ This repository demonstrates how to handle and send multiple checkbox values fro
          public static function setUpConnection()
          {
              if (!isset(Database::$connection)) {
-                 Database::$connection = new mysqli("localhost", "root", "", "your_database_name");
+                 Database::$connection = new mysqli("localhost", "root", "your_database_password", "your_database_name", port_number);
              }
          }
 
